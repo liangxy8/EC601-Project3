@@ -2,7 +2,7 @@ from __future__ import print_function
 import mysql.connector
 from mysql.connector import errorcode
 
-DB_NAME = 'twitter_data'
+DB_NAME = 'lxy_mini3'
 
 TABLES = {}
 TABLES['twitters'] = (
@@ -22,7 +22,7 @@ TABLES['contents'] = (
 TABLES['pictures'] = (
     "CREATE TABLE `pictures` ("
     "  `pic_no` int(11) NOT NULL,"
-    "  `pic_url` varchar(40) NOT NULL UNIQUE,"
+    "  `pic_url` varchar(100) NOT NULL UNIQUE,"
     "  `twit_no` int(11) NOT NULL,"
     "  FOREIGN KEY (`twit_no`) REFERENCES `twitters` (`twit_no`) ON DELETE CASCADE, "
     "  PRIMARY KEY (`pic_no`)"
@@ -32,10 +32,10 @@ TABLES['twitter_datas'] = (
     "CREATE TABLE `twitter_datas` ("
     "  `pic_no` int(11) NOT NULL,"
     "  `cont_no` int(11) NOT NULL,"
-    "  FOREIGN KEY (`pic_no`) REFERENCES `pictures` (`pic_no`) ON DELETE CASCADE, "
-    "  FOREIGN KEY (`cont_no`) REFERENCES `contents` (`cont_no`) ON DELETE CASCADE"
     "  PRIMARY KEY (`pic_no`,`cont_no`), KEY `pic_no` (`pic_no`),"
     "  KEY `cont_no` (`cont_no`),"
+    "  FOREIGN KEY (`pic_no`) REFERENCES `pictures` (`pic_no`) ON DELETE CASCADE, "
+    "  FOREIGN KEY (`cont_no`) REFERENCES `contents` (`cont_no`) ON DELETE CASCADE"
     ") ENGINE=InnoDB")
 
 USERNAME = input("MySQL username: \n")
