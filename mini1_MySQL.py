@@ -9,6 +9,8 @@ import os
 import mysql.connector
 from mysql.connector import errorcode
 import urllib
+from google.cloud import videointelligence
+import io
 
   
 #consumer_key = '..............'
@@ -17,10 +19,6 @@ import urllib
 #access_secret = '...............'
 
 
-consumer_key = 'dEqh76HwX5U7hCIK2iIcxoxru'
-consumer_secret = '5K20dpFlGIkyKZjqGBEshKafHq39ac2ThARhe1Uf1gPLNIBJfx'
-access_token = '1041005266832121858-n8UPtUdnEHLAwZKaJYL22bR7v4DdFA'
-access_secret = 'ShaAqtOZnyeyoC7GEx8ewPSiFXmMM2irlPmPAOwCjBjlT'
 
 
 auth = OAuthHandler(consumer_key, consumer_secret)
@@ -114,8 +112,119 @@ for line in f:
     data_pic = (pic_start_id+1, current_row_id, line)
     cursor.execute(add_pic, data_pic)
     file_count += 1
-    urllib.request.urlretrieve(line, str(file_count)+".jpg")
+    #urllib.request.urlretrieve(line, str(file_count)+".jpg")
 
+cnx.commit()
+cursor.close()
+cnx.close()
+
+
+os.system('ffmpeg -loglevel panic -framerate 0.4 -i images/%d.jpg -c:v libx264 -r 30 -s 800*600 -pix_fmt yuv420p video.mp4')
+
+
+video_client = videointelligence.VideoIntelligenceServiceClient()
+features = [videointelligence.enums.Feature.LABEL_DETECTION]
+with io.open("video.mp4", 'rb') as movie:
+    video = movie.read()
+operation = video_client.annotate_video(features=features, input_content=video)
+print('\nProcessing video for label annotations:')
+result = operation.result(timeout=90)
+print('\nFinished processing.')
+
+# first result is retrieved because a single video was processed
+
+#segment_labels = result.annotation_results[0].segment_label_annotations
+#for i, segment_label in enumerate(segment_labels):
+#    print('Video label description: {}'.format(
+#        segment_label.entity.description))
+#    for category_entity in segment_label.category_entities:
+#        print('\tLabel category description: {}'.format(
+#            category_entity.description))
+#
+#    for i, segment in enumerate(segment_label.segments):
+#        start_time = (segment.segment.start_time_offset.seconds +
+#                      segment.segment.start_time_offset.nanos / 1e9)
+#        end_time = (segment.segment.end_time_offset.seconds +
+#                    segment.segment.end_time_offset.nanos / 1e9)
+#        positions = '{}s to {}s'.format(start_time, end_time)
+#        confidence = segment.confidence
+#        print('\tSegment {}: {}'.format(i, positions))
+#        print('\tConfidence: {}'.format(confidence))
+#    print('\n')
+
+
+#shot_labels = result.annotation_results[0].shot_label_annotations
+#for i, shot_label in enumerate(shot_labels):
+#    print('Video label description: {}'.format(
+#        shot_label.entity.description))
+#    for category_entity in shot_label.category_entities:
+#        print('\tLabel category description: {}'.format(
+#            category_entity.description))
+#
+#    for i, shot in enumerate(shot_label.segments):
+#        start_time = (shot.segment.start_time_offset.seconds +
+#                      shot.segment.start_time_offset.nanos / 1e9)
+#        end_time = (shot.segment.end_time_offset.seconds +
+#                    shot.segment.end_time_offset.nanos / 1e9)
+#        positions = '{}s to {}s'.format(start_time, end_time)
+#        confidence = shot.confidence
+#        print('\tSegment {}: {}'.format(i, positions))
+#        print('\tConfidence: {}'.format(confidence))
+#    print('\n')
+#
+
+shot_labels = result.annotation_results[0].shot_label_annotations
+file = open('label_annotation_list.txt', 'w')
+
+label_count = 0
+cont_name = []
+for i, shot_label in enumerate(shot_labels):
+    cont_name.append(shot_label.entity.description)
+    label_count += 1
+    file.write('    ' + str(label_count) + '\t{}'.format(shot_label.entity.description) + '\n')
+cont_no = list(range(1,label_count+1))
+
+# connect to database
+cnx = mysql.connector.connect(user = USERNAME, password = PASSWORD, database = 'lxy_mini3')
+cursor = cnx.cursor()
+
+# insert data
+add_content = ("INSERT IGNORE INTO contents "
+              "(cont_no, cont_name) "
+              "VALUES (%s, %s)")
+add_pic_content = ("INSERT IGNORE INTO twitter_datas "
+              "(pic_no, cont_no) "
+              "VALUES (%s, %s)")
+for i in range(label_count):
+    cursor.execute("SELECT MAX(cont_no) FROM contents")
+    content_start_id = cursor.fetchall()[0][0]
+    if content_start_id == None:
+        content_start_id = 0
+    data_content = (content_start_id+1, cont_name[i])
+    cursor.execute(add_content, data_content)
+    cnx.commit()
+
+for i, shot_label in enumerate(shot_labels):
+    file.write('Video label description: {}'.format(shot_label.entity.description) + '\n')
+    cursor.execute("SELECT * FROM contents WHERE cont_name = '"+cont_name[i]+"'")
+    current_row_id = cursor.fetchall()[0][0]
+    for category_entity in shot_label.category_entities:
+        file.write('\tLabel category description: {}'.format(category_entity.description) + '\n')
+    for i, shot in enumerate(shot_label.segments):
+        start_time = (shot.segment.start_time_offset.seconds +
+                      shot.segment.start_time_offset.nanos / 1e9)
+        end_time = (shot.segment.end_time_offset.seconds +
+                    shot.segment.end_time_offset.nanos / 1e9)
+
+        frame_no = int(round(end_time*0.4))
+        data_pic_content = (pic_start_id+frame_no, current_row_id)
+        cursor.execute(add_pic_content, data_pic_content)
+        positions = '{}Picture number {}'.format('', frame_no)
+        confidence = shot.confidence
+        file.write('\tSegment {}: {}'.format(i+1, positions) + '\n')
+        file.write('\tConfidence: {}'.format(confidence) + '\n')
+    file.write('\n')
+file.close()
 cnx.commit()
 cursor.close()
 cnx.close()

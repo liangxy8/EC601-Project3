@@ -1,0 +1,300 @@
+    1	rabbit
+    2	grizzly bear
+    3	audio
+    4	audio equipment
+    5	sea
+    6	pattern
+    7	metropolis
+    8	diving
+    9	skyscraper
+    10	flower
+    11	hare
+    12	font
+    13	safari
+    14	wildlife
+    15	display device
+    16	domestic rabbit
+    17	brown bear
+    18	grassland
+    19	graphic design
+    20	text
+    21	giraffidae
+    22	larva
+    23	cougar
+    24	nature
+    25	media
+    26	sky
+    27	projection screen
+    28	headphones
+    29	building
+    30	wilderness
+    31	underwater
+    32	signage
+    33	led display
+    34	insect
+    35	rabits and hares
+    36	metropolitan area
+    37	sports
+    38	mountain
+    39	television
+    40	terrestrial animal
+    41	tree
+    42	ocean
+    43	structure
+    44	giraffe
+    45	animal
+    46	led backlit lcd display
+    47	architecture
+    48	multimedia
+    49	national park
+    50	nature reserve
+    51	morning
+    52	presentation
+    53	wildflower
+    54	flat panel display
+    55	caterpillar
+    56	bear
+    57	invertebrate
+Video label description: rabbit
+	Label category description: pet
+	Segment 1: Picture number 5
+	Confidence: 0.9968993067741394
+
+Video label description: grizzly bear
+	Label category description: bear
+	Segment 1: Picture number 11
+	Confidence: 0.5227017402648926
+
+Video label description: audio
+	Label category description: technology
+	Segment 1: Picture number 12
+	Confidence: 0.4353864789009094
+
+Video label description: audio equipment
+	Label category description: audio
+	Segment 1: Picture number 12
+	Confidence: 0.40979158878326416
+
+Video label description: sea
+	Segment 1: Picture number 6
+	Confidence: 0.4285385310649872
+
+Video label description: pattern
+	Label category description: design
+	Segment 1: Picture number 14
+	Confidence: 0.6533240079879761
+
+Video label description: metropolis
+	Label category description: city
+	Segment 1: Picture number 20
+	Confidence: 0.4025704562664032
+
+Video label description: diving
+	Label category description: sports
+	Segment 1: Picture number 6
+	Confidence: 0.33879950642585754
+
+Video label description: skyscraper
+	Label category description: building
+	Segment 1: Picture number 20
+	Confidence: 0.6765936613082886
+
+Video label description: flower
+	Label category description: plant
+	Segment 1: Picture number 8
+	Confidence: 0.7703826427459717
+
+Video label description: hare
+	Label category description: mammal
+	Segment 1: Picture number 5
+	Confidence: 0.911024808883667
+
+Video label description: font
+	Label category description: software
+	Segment 1: Picture number 14
+	Confidence: 0.46820539236068726
+
+Video label description: safari
+	Label category description: adventure
+	Segment 1: Picture number 4
+	Confidence: 0.3420422375202179
+
+Video label description: wildlife
+	Label category description: animal
+	Segment 1: Picture number 1
+	Confidence: 0.49353617429733276
+	Segment 2: Picture number 4
+	Confidence: 0.9096986055374146
+	Segment 3: Picture number 5
+	Confidence: 0.37016844749450684
+	Segment 4: Picture number 10
+	Confidence: 0.49353617429733276
+	Segment 5: Picture number 11
+	Confidence: 0.8877609372138977
+
+Video label description: display device
+	Label category description: technology
+	Segment 1: Picture number 15
+	Confidence: 0.6410321593284607
+	Segment 2: Picture number 18
+	Confidence: 0.4534232020378113
+
+Video label description: domestic rabbit
+	Label category description: rabbit
+	Segment 1: Picture number 5
+	Confidence: 0.9666654467582703
+
+Video label description: brown bear
+	Label category description: bear
+	Segment 1: Picture number 11
+	Confidence: 0.801787793636322
+
+Video label description: grassland
+	Label category description: geographical feature
+	Segment 1: Picture number 4
+	Confidence: 0.7950790524482727
+
+Video label description: graphic design
+	Label category description: artwork
+	Segment 1: Picture number 14
+	Confidence: 0.4734857976436615
+
+Video label description: text
+	Segment 1: Picture number 14
+	Confidence: 0.5399831533432007
+
+Video label description: giraffidae
+	Label category description: mammal
+	Segment 1: Picture number 4
+	Confidence: 0.6520507335662842
+
+Video label description: larva
+	Label category description: animal
+	Segment 1: Picture number 3
+	Confidence: 0.33466875553131104
+
+Video label description: cougar
+	Label category description: mammal
+	Segment 1: Picture number 1
+	Confidence: 0.9425992965698242
+
+Video label description: nature
+	Segment 1: Picture number 8
+	Confidence: 0.9109710454940796
+	Segment 2: Picture number 11
+	Confidence: 0.9109710454940796
+
+Video label description: media
+	Segment 1: Picture number 15
+	Confidence: 0.5291357040405273
+
+Video label description: sky
+	Segment 1: Picture number 7
+	Confidence: 0.5569605827331543
+
+Video label description: projection screen
+	Label category description: technology
+	Segment 1: Picture number 15
+	Confidence: 0.3478609323501587
+	Segment 2: Picture number 18
+	Confidence: 0.5622212886810303
+
+Video label description: headphones
+	Label category description: audio
+	Label category description: technology
+	Segment 1: Picture number 12
+	Confidence: 0.46932706236839294
+
+Video label description: building
+	Segment 1: Picture number 20
+	Confidence: 0.8769206404685974
+
+Video label description: wilderness
+	Label category description: geographical feature
+	Segment 1: Picture number 8
+	Confidence: 0.4905921220779419
+	Segment 2: Picture number 11
+	Confidence: 0.5890776515007019
+
+Video label description: underwater
+	Segment 1: Picture number 6
+	Confidence: 0.7611404657363892
+
+Video label description: signage
+	Segment 1: Picture number 18
+	Confidence: 0.36582043766975403
+
+Video label description: led display
+	Label category description: technology
+	Segment 1: Picture number 18
+	Confidence: 0.6662285923957825
+
+Video label description: insect
+	Label category description: animal
+	Segment 1: Picture number 3
+	Confidence: 0.734974205493927
+
+Video label description: rabits and hares
+	Label category description: mammal
+	Segment 1: Picture number 5
+	Confidence: 0.4711257815361023
+
+Video label description: metropolitan area
+	Label category description: city
+	Segment 1: Picture number 20
+	Confidence: 0.3478556275367737
+
+Video label description: sports
+	Segment 1: Picture number 13
+	Confidence: 0.31616124510765076
+
+Video label description: mountain
+	Label category description: geographical feature
+	Segment 1: Picture number 8
+	Confidence: 0.826139509677887
+
+Video label description: television
+	Label category description: media
+	Segment 1: Picture number 15
+	Confidence: 0.6668160557746887
+
+Video label description: terrestrial animal
+	Label category description: animal
+	Segment 1: Picture number 4
+	Confidence: 0.31754618883132935
+	Segment 2: Picture number 11
+	Confidence: 0.7039221525192261
+
+Video label description: tree
+	Label category description: plant
+	Segment 1: Picture number 7
+	Confidence: 0.9043022990226746
+
+Video label description: ocean
+	Segment 1: Picture number 6
+	Confidence: 0.4468880891799927
+
+Video label description: structure
+	Segment 1: Picture number 20
+	Confidence: 0.30665531754493713
+
+Video label description: giraffe
+	Label category description: mammal
+	Segment 1: Picture number 4
+	Confidence: 0.9933058619499207
+
+Video label description: animal
+	Segment 1: Picture number 1
+	Confidence: 0.879321813583374
+	Segment 2: Picture number 3
+	Confidence: 0.43145260214805603
+	Segment 3: Picture number 4
+	Confidence: 0.8427740931510925
+	Segment 4: Picture number 5
+	Confidence: 0.9564523696899414
+	Segment 5: Picture number 10
+	Confidence: 0.8732807040214539
+	Segment 6: Picture number 11
+	Confidence: 0.9256876111030579
+
+Video label description: led backlit lcd display
