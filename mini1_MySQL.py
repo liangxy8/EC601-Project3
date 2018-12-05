@@ -104,19 +104,23 @@ add_pic = ("INSERT INTO pictures "
 
 file_count = 0
 pic_start_id = 0
+line_count = 0
 for line in f:
+    line_count +=1
     cursor.execute("SELECT MAX(pic_no) FROM pictures")
     pic_start_id = cursor.fetchall()[0][0]
+    #print(pic_start_id)
     if pic_start_id == None:
         pic_start_id = 0
     data_pic = (pic_start_id+1, current_row_id, line)
     cursor.execute(add_pic, data_pic)
     file_count += 1
-    #urllib.request.urlretrieve(line, str(file_count)+".jpg")
 
 cnx.commit()
 cursor.close()
 cnx.close()
+pic_start_id = pic_start_id+1-line_count
+#print("pic_start_id is:",pic_start_id)
 
 
 os.system('ffmpeg -loglevel panic -framerate 0.4 -i images/%d.jpg -c:v libx264 -r 30 -s 800*600 -pix_fmt yuv420p video.mp4')
@@ -202,15 +206,20 @@ for i in range(label_count):
         content_start_id = 0
     data_content = (content_start_id+1, cont_name[i])
     cursor.execute(add_content, data_content)
-    cnx.commit()
+cnx.commit()
+
 
 for i, shot_label in enumerate(shot_labels):
     file.write('Video label description: {}'.format(shot_label.entity.description) + '\n')
     cursor.execute("SELECT * FROM contents WHERE cont_name = '"+cont_name[i]+"'")
-    current_row_id = cursor.fetchall()[0][0]
+    try:
+        current_row_id = cursor.fetchall()[0][0]
+    except IndexError:
+        pass
+    #print(current_row_id)
     for category_entity in shot_label.category_entities:
         file.write('\tLabel category description: {}'.format(category_entity.description) + '\n')
-    for i, shot in enumerate(shot_label.segments):
+    for j, shot in enumerate(shot_label.segments):
         start_time = (shot.segment.start_time_offset.seconds +
                       shot.segment.start_time_offset.nanos / 1e9)
         end_time = (shot.segment.end_time_offset.seconds +
@@ -219,9 +228,10 @@ for i, shot_label in enumerate(shot_labels):
         frame_no = int(round(end_time*0.4))
         data_pic_content = (pic_start_id+frame_no, current_row_id)
         cursor.execute(add_pic_content, data_pic_content)
+        #positions = '{}s to {}s'.format(start_time, end_time) 
         positions = '{}Picture number {}'.format('', frame_no)
         confidence = shot.confidence
-        file.write('\tSegment {}: {}'.format(i+1, positions) + '\n')
+        file.write('\tSegment {}: {}'.format(j+1, positions) + '\n')
         file.write('\tConfidence: {}'.format(confidence) + '\n')
     file.write('\n')
 file.close()

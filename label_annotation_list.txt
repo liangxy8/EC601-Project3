@@ -1,300 +1,434 @@
-    1	rabbit
-    2	grizzly bear
-    3	audio
-    4	audio equipment
-    5	sea
-    6	pattern
-    7	metropolis
-    8	diving
-    9	skyscraper
-    10	flower
-    11	hare
-    12	font
-    13	safari
-    14	wildlife
-    15	display device
-    16	domestic rabbit
-    17	brown bear
-    18	grassland
-    19	graphic design
-    20	text
-    21	giraffidae
-    22	larva
-    23	cougar
-    24	nature
-    25	media
-    26	sky
-    27	projection screen
-    28	headphones
-    29	building
-    30	wilderness
-    31	underwater
-    32	signage
-    33	led display
-    34	insect
-    35	rabits and hares
-    36	metropolitan area
-    37	sports
-    38	mountain
-    39	television
-    40	terrestrial animal
-    41	tree
-    42	ocean
-    43	structure
-    44	giraffe
-    45	animal
-    46	led backlit lcd display
-    47	architecture
-    48	multimedia
-    49	national park
-    50	nature reserve
-    51	morning
-    52	presentation
-    53	wildflower
-    54	flat panel display
-    55	caterpillar
-    56	bear
-    57	invertebrate
-Video label description: rabbit
-	Label category description: pet
-	Segment 1: Picture number 5
-	Confidence: 0.9968993067741394
-
-Video label description: grizzly bear
-	Label category description: bear
-	Segment 1: Picture number 11
-	Confidence: 0.5227017402648926
-
-Video label description: audio
+    1	display device
+    2	star
+    3	safari
+    4	nature reserve
+    5	morning
+    6	atmosphere of earth
+    7	media
+    8	projection screen
+    9	caterpillar
+    10	graphic design
+    11	underwater
+    12	sky
+    13	night
+    14	mountain
+    15	domestic rabbit
+    16	ocean
+    17	galaxy
+    18	flower
+    19	bear
+    20	animal
+    21	rabbit
+    22	bird
+    23	terrestrial animal
+    24	wilderness
+    25	atmosphere
+    26	headphones
+    27	great grey owl
+    28	larva
+    29	sea
+    30	rabits and hares
+    31	brown bear
+    32	beak
+    33	horizon
+    34	giraffidae
+    35	font
+    36	hare
+    37	television
+    38	pattern
+    39	moonlight
+    40	wildlife
+    41	presentation
+    42	astronomy
+    43	bird of prey
+    44	diving
+    45	wildflower
+    46	outer space
+    47	flat panel display
+    48	space
+    49	audio
+    50	grassland
+    51	celestial event
+    52	constellation
+    53	national park
+    54	insect
+    55	multimedia
+    56	astronomical object
+    57	grizzly bear
+    58	led backlit lcd display
+    59	audio equipment
+    60	nature
+    61	text
+    62	cougar
+    63	sports
+    64	tree
+    65	black
+    66	owl
+    67	invertebrate
+    68	snow
+    69	giraffe
+Video label description: display device
 	Label category description: technology
-	Segment 1: Picture number 12
-	Confidence: 0.4353864789009094
+	Segment 1: Picture number 19
+	Confidence: 0.6410321593284607
 
-Video label description: audio equipment
-	Label category description: audio
-	Segment 1: Picture number 12
-	Confidence: 0.40979158878326416
-
-Video label description: sea
-	Segment 1: Picture number 6
-	Confidence: 0.4285385310649872
-
-Video label description: pattern
-	Label category description: design
-	Segment 1: Picture number 14
-	Confidence: 0.6533240079879761
-
-Video label description: metropolis
-	Label category description: city
-	Segment 1: Picture number 20
-	Confidence: 0.4025704562664032
-
-Video label description: diving
-	Label category description: sports
-	Segment 1: Picture number 6
-	Confidence: 0.33879950642585754
-
-Video label description: skyscraper
-	Label category description: building
-	Segment 1: Picture number 20
-	Confidence: 0.6765936613082886
-
-Video label description: flower
-	Label category description: plant
-	Segment 1: Picture number 8
-	Confidence: 0.7703826427459717
-
-Video label description: hare
-	Label category description: mammal
-	Segment 1: Picture number 5
-	Confidence: 0.911024808883667
-
-Video label description: font
-	Label category description: software
-	Segment 1: Picture number 14
-	Confidence: 0.46820539236068726
+Video label description: star
+	Label category description: astronomical object
+	Segment 1: Picture number 2
+	Confidence: 0.662259578704834
 
 Video label description: safari
 	Label category description: adventure
-	Segment 1: Picture number 4
+	Segment 1: Picture number 8
 	Confidence: 0.3420422375202179
 
-Video label description: wildlife
-	Label category description: animal
-	Segment 1: Picture number 1
-	Confidence: 0.49353617429733276
-	Segment 2: Picture number 4
-	Confidence: 0.9096986055374146
-	Segment 3: Picture number 5
-	Confidence: 0.37016844749450684
-	Segment 4: Picture number 10
-	Confidence: 0.49353617429733276
-	Segment 5: Picture number 11
-	Confidence: 0.8877609372138977
-
-Video label description: display device
-	Label category description: technology
-	Segment 1: Picture number 15
-	Confidence: 0.6410321593284607
-	Segment 2: Picture number 18
-	Confidence: 0.4534232020378113
-
-Video label description: domestic rabbit
-	Label category description: rabbit
-	Segment 1: Picture number 5
-	Confidence: 0.9666654467582703
-
-Video label description: brown bear
-	Label category description: bear
-	Segment 1: Picture number 11
-	Confidence: 0.801787793636322
-
-Video label description: grassland
+Video label description: nature reserve
 	Label category description: geographical feature
-	Segment 1: Picture number 4
-	Confidence: 0.7950790524482727
-
-Video label description: graphic design
-	Label category description: artwork
-	Segment 1: Picture number 14
-	Confidence: 0.4734857976436615
-
-Video label description: text
-	Segment 1: Picture number 14
-	Confidence: 0.5399831533432007
-
-Video label description: giraffidae
-	Label category description: mammal
-	Segment 1: Picture number 4
-	Confidence: 0.6520507335662842
-
-Video label description: larva
-	Label category description: animal
-	Segment 1: Picture number 3
-	Confidence: 0.33466875553131104
-
-Video label description: cougar
-	Label category description: mammal
-	Segment 1: Picture number 1
-	Confidence: 0.9425992965698242
-
-Video label description: nature
 	Segment 1: Picture number 8
-	Confidence: 0.9109710454940796
-	Segment 2: Picture number 11
-	Confidence: 0.9109710454940796
+	Confidence: 0.46295255422592163
+
+Video label description: morning
+	Segment 1: Picture number 12
+	Confidence: 0.3140116333961487
+
+Video label description: atmosphere of earth
+	Label category description: geographical feature
+	Segment 1: Picture number 2
+	Confidence: 0.40573936700820923
 
 Video label description: media
-	Segment 1: Picture number 15
+	Segment 1: Picture number 19
 	Confidence: 0.5291357040405273
-
-Video label description: sky
-	Segment 1: Picture number 7
-	Confidence: 0.5569605827331543
 
 Video label description: projection screen
 	Label category description: technology
-	Segment 1: Picture number 15
+	Segment 1: Picture number 19
 	Confidence: 0.3478609323501587
-	Segment 2: Picture number 18
-	Confidence: 0.5622212886810303
+
+Video label description: caterpillar
+	Label category description: animal
+	Label category description: insect
+	Segment 1: Picture number 7
+	Confidence: 0.8224797248840332
+
+Video label description: graphic design
+	Label category description: artwork
+	Segment 1: Picture number 18
+	Confidence: 0.4734857976436615
+
+Video label description: underwater
+	Segment 1: Picture number 10
+	Confidence: 0.7611404657363892
+
+Video label description: sky
+	Segment 1: Picture number 2
+	Confidence: 0.9660742282867432
+	Segment 2: Picture number 11
+	Confidence: 0.5569605827331543
+
+Video label description: night
+	Segment 1: Picture number 2
+	Confidence: 0.9201774001121521
+
+Video label description: mountain
+	Label category description: geographical feature
+	Segment 1: Picture number 12
+	Confidence: 0.826139509677887
+
+Video label description: domestic rabbit
+	Label category description: rabbit
+	Segment 1: Picture number 9
+	Confidence: 0.9666654467582703
+
+Video label description: ocean
+	Segment 1: Picture number 10
+	Confidence: 0.4468880891799927
+
+Video label description: galaxy
+	Label category description: astronomical object
+	Segment 1: Picture number 2
+	Confidence: 0.3154447376728058
+
+Video label description: flower
+	Label category description: plant
+	Segment 1: Picture number 12
+	Confidence: 0.7703826427459717
+
+Video label description: bear
+	Label category description: mammal
+	Segment 1: Picture number 15
+	Confidence: 0.7601096630096436
+
+Video label description: animal
+	Segment 1: Picture number 3
+	Confidence: 0.7050070762634277
+	Segment 2: Picture number 4
+	Confidence: 0.9135488867759705
+	Segment 3: Picture number 5
+	Confidence: 0.879321813583374
+	Segment 4: Picture number 7
+	Confidence: 0.43145260214805603
+	Segment 5: Picture number 8
+	Confidence: 0.8427740931510925
+	Segment 6: Picture number 9
+	Confidence: 0.9564523696899414
+	Segment 7: Picture number 14
+	Confidence: 0.8732807040214539
+	Segment 8: Picture number 15
+	Confidence: 0.9256876111030579
+
+Video label description: rabbit
+	Label category description: pet
+	Segment 1: Picture number 9
+	Confidence: 0.9968993067741394
+
+Video label description: bird
+	Label category description: animal
+	Segment 1: Picture number 4
+	Confidence: 0.9591156244277954
+
+Video label description: terrestrial animal
+	Label category description: animal
+	Segment 1: Picture number 8
+	Confidence: 0.31754618883132935
+	Segment 2: Picture number 15
+	Confidence: 0.7039221525192261
+
+Video label description: wilderness
+	Label category description: geographical feature
+	Segment 1: Picture number 12
+	Confidence: 0.4905921220779419
+	Segment 2: Picture number 15
+	Confidence: 0.5890776515007019
+
+Video label description: atmosphere
+	Segment 1: Picture number 2
+	Confidence: 0.765795886516571
 
 Video label description: headphones
 	Label category description: audio
 	Label category description: technology
-	Segment 1: Picture number 12
+	Segment 1: Picture number 16
 	Confidence: 0.46932706236839294
 
-Video label description: building
-	Segment 1: Picture number 20
-	Confidence: 0.8769206404685974
+Video label description: great grey owl
+	Label category description: owl
+	Segment 1: Picture number 4
+	Confidence: 0.717258870601654
 
-Video label description: wilderness
-	Label category description: geographical feature
-	Segment 1: Picture number 8
-	Confidence: 0.4905921220779419
-	Segment 2: Picture number 11
-	Confidence: 0.5890776515007019
-
-Video label description: underwater
-	Segment 1: Picture number 6
-	Confidence: 0.7611404657363892
-
-Video label description: signage
-	Segment 1: Picture number 18
-	Confidence: 0.36582043766975403
-
-Video label description: led display
-	Label category description: technology
-	Segment 1: Picture number 18
-	Confidence: 0.6662285923957825
-
-Video label description: insect
+Video label description: larva
 	Label category description: animal
-	Segment 1: Picture number 3
-	Confidence: 0.734974205493927
+	Segment 1: Picture number 7
+	Confidence: 0.33466875553131104
+
+Video label description: sea
+	Segment 1: Picture number 10
+	Confidence: 0.4285385310649872
 
 Video label description: rabits and hares
 	Label category description: mammal
-	Segment 1: Picture number 5
+	Segment 1: Picture number 9
 	Confidence: 0.4711257815361023
 
-Video label description: metropolitan area
-	Label category description: city
-	Segment 1: Picture number 20
-	Confidence: 0.3478556275367737
+Video label description: brown bear
+	Label category description: bear
+	Segment 1: Picture number 15
+	Confidence: 0.801787793636322
 
-Video label description: sports
-	Segment 1: Picture number 13
-	Confidence: 0.31616124510765076
+Video label description: beak
+	Label category description: bird
+	Segment 1: Picture number 4
+	Confidence: 0.6058763265609741
 
-Video label description: mountain
+Video label description: horizon
 	Label category description: geographical feature
+	Segment 1: Picture number 2
+	Confidence: 0.5367200970649719
+
+Video label description: giraffidae
+	Label category description: mammal
 	Segment 1: Picture number 8
-	Confidence: 0.826139509677887
+	Confidence: 0.6520507335662842
+
+Video label description: font
+	Label category description: software
+	Segment 1: Picture number 18
+	Confidence: 0.46820539236068726
+
+Video label description: hare
+	Label category description: mammal
+	Segment 1: Picture number 9
+	Confidence: 0.911024808883667
 
 Video label description: television
 	Label category description: media
-	Segment 1: Picture number 15
+	Segment 1: Picture number 19
 	Confidence: 0.6668160557746887
 
-Video label description: terrestrial animal
+Video label description: pattern
+	Label category description: design
+	Segment 1: Picture number 18
+	Confidence: 0.6533240079879761
+
+Video label description: moonlight
+	Label category description: light
+	Segment 1: Picture number 2
+	Confidence: 0.42844274640083313
+
+Video label description: wildlife
 	Label category description: animal
+	Segment 1: Picture number 5
+	Confidence: 0.49353617429733276
+	Segment 2: Picture number 8
+	Confidence: 0.9096986055374146
+	Segment 3: Picture number 9
+	Confidence: 0.37016844749450684
+	Segment 4: Picture number 14
+	Confidence: 0.49353617429733276
+	Segment 5: Picture number 15
+	Confidence: 0.8877609372138977
+
+Video label description: presentation
+	Label category description: person
+	Segment 1: Picture number 19
+	Confidence: 0.6949010491371155
+
+Video label description: astronomy
+	Label category description: science
+	Segment 1: Picture number 2
+	Confidence: 0.3629555106163025
+
+Video label description: bird of prey
+	Label category description: bird
 	Segment 1: Picture number 4
-	Confidence: 0.31754618883132935
-	Segment 2: Picture number 11
-	Confidence: 0.7039221525192261
+	Confidence: 0.37800678610801697
+
+Video label description: diving
+	Label category description: sports
+	Segment 1: Picture number 10
+	Confidence: 0.33879950642585754
+
+Video label description: wildflower
+	Label category description: flower
+	Segment 1: Picture number 12
+	Confidence: 0.918459951877594
+
+Video label description: outer space
+	Label category description: astronomical object
+	Segment 1: Picture number 2
+	Confidence: 0.48234957456588745
+
+Video label description: flat panel display
+	Label category description: technology
+	Segment 1: Picture number 19
+	Confidence: 0.44212403893470764
+
+Video label description: space
+	Segment 1: Picture number 2
+	Confidence: 0.45188236236572266
+
+Video label description: audio
+	Label category description: technology
+	Segment 1: Picture number 16
+	Confidence: 0.4353864789009094
+
+Video label description: grassland
+	Label category description: geographical feature
+	Segment 1: Picture number 8
+	Confidence: 0.7950790524482727
+
+Video label description: celestial event
+	Label category description: event
+	Segment 1: Picture number 2
+	Confidence: 0.4584272801876068
+
+Video label description: constellation
+	Label category description: astronomical object
+	Segment 1: Picture number 2
+	Confidence: 0.3268022835254669
+
+Video label description: national park
+	Label category description: park
+	Segment 1: Picture number 8
+	Confidence: 0.44439780712127686
+
+Video label description: insect
+	Label category description: animal
+	Segment 1: Picture number 7
+	Confidence: 0.734974205493927
+
+Video label description: multimedia
+	Segment 1: Picture number 19
+	Confidence: 0.3685055077075958
+
+Video label description: astronomical object
+	Segment 1: Picture number 2
+	Confidence: 0.3854396939277649
+
+Video label description: grizzly bear
+	Label category description: bear
+	Segment 1: Picture number 15
+	Confidence: 0.5227017402648926
+
+Video label description: led backlit lcd display
+	Label category description: technology
+	Segment 1: Picture number 19
+	Confidence: 0.4036307632923126
+
+Video label description: audio equipment
+	Label category description: audio
+	Segment 1: Picture number 16
+	Confidence: 0.40979158878326416
+
+Video label description: nature
+	Segment 1: Picture number 2
+	Confidence: 0.48740845918655396
+	Segment 2: Picture number 4
+	Confidence: 0.7834880352020264
+	Segment 3: Picture number 12
+	Confidence: 0.9109710454940796
+	Segment 4: Picture number 15
+	Confidence: 0.9109710454940796
+
+Video label description: text
+	Segment 1: Picture number 18
+	Confidence: 0.5399831533432007
+
+Video label description: cougar
+	Label category description: mammal
+	Segment 1: Picture number 5
+	Confidence: 0.8232021331787109
+
+Video label description: sports
+	Segment 1: Picture number 17
+	Confidence: 0.31616124510765076
 
 Video label description: tree
 	Label category description: plant
-	Segment 1: Picture number 7
+	Segment 1: Picture number 11
 	Confidence: 0.9043022990226746
 
-Video label description: ocean
-	Segment 1: Picture number 6
-	Confidence: 0.4468880891799927
+Video label description: black
+	Segment 1: Picture number 2
+	Confidence: 0.4095759987831116
 
-Video label description: structure
-	Segment 1: Picture number 20
-	Confidence: 0.30665531754493713
+Video label description: owl
+	Label category description: bird
+	Segment 1: Picture number 4
+	Confidence: 0.9289737343788147
+
+Video label description: invertebrate
+	Label category description: animal
+	Segment 1: Picture number 7
+	Confidence: 0.5944950580596924
+
+Video label description: snow
+	Label category description: weather
+	Segment 1: Picture number 1
+	Confidence: 0.36008623242378235
 
 Video label description: giraffe
 	Label category description: mammal
-	Segment 1: Picture number 4
+	Segment 1: Picture number 8
 	Confidence: 0.9933058619499207
 
-Video label description: animal
-	Segment 1: Picture number 1
-	Confidence: 0.879321813583374
-	Segment 2: Picture number 3
-	Confidence: 0.43145260214805603
-	Segment 3: Picture number 4
-	Confidence: 0.8427740931510925
-	Segment 4: Picture number 5
-	Confidence: 0.9564523696899414
-	Segment 5: Picture number 10
-	Confidence: 0.8732807040214539
-	Segment 6: Picture number 11
-	Confidence: 0.9256876111030579
-
-Video label description: led backlit lcd display
